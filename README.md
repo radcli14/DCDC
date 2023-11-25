@@ -2,7 +2,7 @@
 
 ![DCDC Header Image](images/dcdc.png)
 
-![DCDC Header Animated](images/dcdc.gif
+![DCDC Header Animated](images/dcdc.gif)
 
 Brand graphics, scripts, and other content for DCDC LLC.
 - District of Columbia
