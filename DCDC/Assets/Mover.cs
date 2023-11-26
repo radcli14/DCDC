@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
     public float removeTime = 2.5f;
     private float currentTime = 0.0f;
     private readonly float totalTime = 9.0f;
-    private readonly float gainFactor = 0.1f;
+    private readonly float gainFactor = 0.05f;
     public float visibleHeight = 0.1f;
     public float hiddenHeight = 0.0f;
 
