@@ -6,8 +6,8 @@ let baseUrl = URL(
     fileURLWithPath: "/Users/radcli14/Documents/code.nosync/DCDC/photogrammetry",
     isDirectory: true
 )
-let modelName = "puppy"
-let outputFileFormat = ".obj"
+let modelName = "fork"
+let outputFileFormat = ".usdz"
 let outputFileDetail: [PhotogrammetrySession.Request.Detail] = [.reduced, .medium, .full]
 
 // Setup paths and URL's for the sources
