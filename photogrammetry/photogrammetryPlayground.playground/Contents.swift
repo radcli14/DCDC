@@ -3,12 +3,12 @@ import RealityKit
 
 // User specification for the directory relative to this file with the images
 let baseUrl = URL(
-    fileURLWithPath: "/Users/radcli14/Documents/code.nosync/DCDC/photogrammetry",
+    fileURLWithPath: "/Users/radcli14/Documents/code/DCDC/photogrammetry",
     isDirectory: true
 )
-let modelName = "gilda"
-let outputFileFormat = ".obj"
-let outputFileDetail: [PhotogrammetrySession.Request.Detail] = [.full] //, [.reduced, .medium, .full]
+let modelName = "puppyAugust"
+let outputFileFormat = ".usdz"
+let outputFileDetail: [PhotogrammetrySession.Request.Detail] = [.reduced, .medium, .full]
 
 // Setup paths and URL's for the sources
 let pictureUrl = baseUrl.appendingPathComponent(modelName)
@@ -54,7 +54,7 @@ Task {
 
 // Create requests
 let requests: [PhotogrammetrySession.Request] = (0 ..< outputFileDetail.count).map { k in
-        .modelFile(url: outputFileUrls[k],  detail: outputFileDetail[k], geometry: .init(bounds: BoundingBox(min: simd_float3(x: -10, y: -10, z: -10), max: simd_float3(x: 10, y: 10, z: 10))))
+        .modelFile(url: outputFileUrls[k],  detail: outputFileDetail[k], geometry: .init(bounds: BoundingBox(min: simd_float3(x: -10, y: -10, z: -10), max: simd_float3(x: 10, y: 20, z: 10))))
 }
 
 // If files already exist at the intended output location, rename them
